@@ -29,5 +29,7 @@ User name, credential aint in the scope of this git repo.
 
 ## Test
 for local env
->cd project/<project>; rm -rf .terrform* ; terraform init -backend=false
+```
+>cd project/<project>; rm -rf .terrform* ; terraform init -backend=false -backend-config=../backend.hcl
 >terraform validate
+```

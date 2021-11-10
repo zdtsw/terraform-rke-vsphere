@@ -1,9 +1,8 @@
-# *************************************************************
+#*************************************************************
 terraform {
-    backend "artifactory" {
-        repo     = "dreeu-generic-local"
-        subpath  = "terraform-state/v13/rke_prod"
-    }
+  backend "s3" {
+    key    = "terraform-state/rke_prod"
+  }
 }
 
 #*************************************************************
